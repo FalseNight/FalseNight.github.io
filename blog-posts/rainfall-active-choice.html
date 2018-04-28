@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Tyler Pinho - Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="../assets/css/blog.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header">
+
+        <div class="top">
+
+            <!-- Logo -->
+            <div id="logo">
+                <h1 id="title">Tyler Pinho</h1>
+                <p>Web and Game Developer</p>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+                    <li><a href="../blog.html" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Blog</span></a></li>
+                    <li><a href="../docs/Resume.pdf" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Resume</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+        <!-- Portfolio -->
+        <section id="portfolio" class="two">
+            <div class="container">
+				<h2>
+					<strong>Rainfall: Active Choice<br/></strong>
+				</h2>
+				<p>
+					Rainfall’s scenes are designed to be active in nature. Instead of approaching dialogue options from the perspective of navigating a tree structure, the goal is for the player to explore the dialogue by moving and interacting with objects and persons in the scene. 
+				</p>
+				<p>
+					To support this we’ve incorporated the ability for the player to move and interact with other objects and people during any conversation, as well as creating the Active Choice System, a new way of organizing and presenting the information a player collects in-game. The typical structure of a dialogue choice in our game looks like this:
+				</p>
+				<img src="../images/blog-posts/rainfall-active-choice/active_choice_start.png" alt="Starting Active Choice" />
+				<p>
+					This is the starting point in a scenario where we need to display dialogue options. We start with the traditional list of choices, and then utilize a list of augments to enhance and change these choices: Rumors, Timers, Context, and Skills. 
+				</p>
+				<p>
+					Rumor Choices are special dialogue options that only appear after the player has completed specific activities, like listening to certain conversations or completing investigations. The knowledge gained from these activities, known as "Rumors", becomes a part of a persistent collection they can use to unlock new object interactions and dialogue.
+				</p>
+				<p>
+					Timer Choices incorporate a countdown, becoming unavailable after a set amount of times passes, differing based on the nature of the response within the game world. Should all options consist of Timer Choices the player can give an "Ignore" response by waiting for all countdowns to end. For example, consider the situation in which a waitress asks the player what they would like to order. What the player can order is displayed with Timer Choices, and should the player not make any choices for the duration of these countdowns it will create an awkward environment between them and the waitress. This will prompt the waitress to come back later and worsen her perception of the player.
+				</p>
+				<img src="../images/blog-posts/rainfall-active-choice/active_choice_timer.png" alt="Timed Active Choice" />
+				<p>
+					Context Choices are options that only become available when the player is near certain objects or people in a scene. With Lockon Acknowledge representing the player’s focus on a target certain factors like distance can no longer be abstracted within the game. If the player locks-on to a door it's jarring to open it from across the room. 
+				</p>
+				<img src="../images/blog-posts/rainfall-active-choice/active_choice_context.png" alt="Context Active Choice" />
+				<p>
+					Any combination of these augments can be used to enhance the base active choice system in order to craft more interesting scenarios. Each active choice utilizing these augments will provide info on unfulfilled conditions, serving as guideposts through the scene to ensure smooth exploration for the player. This molds active choice to provide a continuous path forward to the player, driving a Choose Your Own Adventure novel that unfolds in real time around them, placing weight on both their actions as well as the lesser explored paths like their inaction. 
+				</p>
+				<p>
+					Something simple like approaching a group of students at night goes from a simple list to a dynamic, multi-layered exploration. Should the player wish to speak with them, they must reach the group within 5 seconds before they become uncomfortable and leave. Should they wish to intimidate them, the player will needed to have collected the Rumor on their school. What would normally would just be a single passive choice has become a proactive situation with multiple outcomes, demonstrating the power of the Active Choice System.
+				</p>
+				<img src="../images/blog-posts/rainfall-active-choice.png" alt="Example Active Choice" />
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+
+        <!-- Copyright -->
+        <ul class="copyright">
+            <li>&copy; Tyler Pinho. All rights reserved.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/jquery.scrollzer.min.js"></script>
+    <script src="../assets/js/skel.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
