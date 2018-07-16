@@ -15,7 +15,15 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
-
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollzer.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+		
 		<!-- Header -->
 		<div id="header">
 			<div class="top">
@@ -41,85 +49,77 @@
 			<!-- Blog -->
 			<section id="blog" class="two">
 				<div class="container">
-					<div class="row">
-						<div class="4u 12u$(mobile)">
-							<article class="item">
-								<a href="blog-posts/pixel-perfection.html" class="image fit"><img src="images/blog-posts/pixel-perfection.png" alt="Pixel Perfection" /></a>
-								<header>
-									<h3>Pixel Perfection</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="blog-posts/rainfall-dev-2.html" class="image fit"><img src="images/blog-posts/rainfall-dev-2.png" alt="Rainfall Dev Blog #2" /></a>
-								<header>
-									<h3>Rainfall Dev Blog #2</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="blog-posts/rainfall-characters.html" class="image fit"><img src="images/rainfall3.png" alt="The Characters of Rainfall" /></a>
-								<header>
-									<h3>The Characters of Rainfall</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="blog-posts/decorator-pattern.html" class="image fit"><img src="images/blog-posts/decorator-pattern.png" alt="Design Patterns: Decorator" /></a>
-								<header>
-									<h3>Design Patterns: Decorator</h3>
-								</header>
-							</article>									
-						</div>
-						<div class="4u 12u$(mobile)">
-							<article class="item">
-								<a href="blog-posts/rainfall-active-choice.html" class="image fit"><img src="images/blog-posts/rainfall-active-choice.png" alt="Rainfall Active Choice" /></a>
-								<header>
-									<h3>Rainfall Active Choice</h3>
-								</header>
-							</article>
-							
-							<article class="item">
-								<a href="blog-posts/dead-mans-hand-warrior.html" class="image fit"><img src="images/blog-posts/dead-mans-hand-warrior.png" alt="Dead Man's Hand Warrior" /></a>
-								<header>
-									<h3>Dead Man's Hand Warrior</h3>
-								</header>
-							</article>
-						</div>
-						<div class="4u$ 12u$(mobile)">
-							<article class="item">
-								<a href="blog-posts/rainfall-dev-1.html" class="image fit"><img src="images/blog-posts/rainfall-dev-1.png" alt="Rainfall Dev Blog #1" /></a>
-								<header>
-									<h3>Rainfall Dev Blog #1</h3>
-								</header>
-							</article>
-							
-							<article class="item">
-								<a href="blog-posts/observer-pattern.html" class="image fit"><img src="images/blog-posts/observer-pattern.png" alt="Design Patterns: Observer" /></a>
-								<header>
-									<h3>Design Patterns: Observer</h3>
-								</header>
-							</article>
-						</div>
+					<div id="blogsRow" class="row">
 					</div>
 				</div>
 			</section>
+			<script>
+					var blogs = [
+					{
+					   "title": "Pixel Perfection",
+					   "image": "pixel-perfection.png",
+					   "page":  "pixel-perfection.html"
+					 },
+					 {
+					   "title": "Rainfall Dev Blog #2",
+					   "image": "rainfall-dev-2.png",
+					   "page":  "rainfall-dev-2.html"
+					 },
+					 {
+					   "title": "The Characters of Rainfall",
+					   "image": "rainfall-characters.png",
+					   "page":  "rainfall-characters.html"
+					 },
+					 {
+					   "title": "Rainfall Active Choice",
+					   "image": "rainfall-active-choice.png",
+					   "page":  "rainfall-active-choice.html"
+					 },
+					 {
+					   "title": "Rainfall Dev Blog #1",
+					   "image": "rainfall-dev-1.png",
+					   "page":  "rainfall-dev-1.html"
+					 },
+					 {
+					   "title": "Design Patterns: Decorator",
+					   "image": "decorator-pattern.png",
+					   "page":  "decorator-pattern.html"
+					 },
+					 {
+					   "title": "Dead Man's Hand Warrior",
+					   "image": "dead-mans-hand-warrior.png",
+					   "page":  "dead-mans-hand-warrior.html"
+					 },
+					 {
+					   "title": "Design Patterns: Observer",
+					   "image": "observer-pattern.png",
+					   "page":  "observer-pattern.html"
+					 }
+					];
+
+					var columns = ['<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">'];
+					for(var i = 0; i< blogs.length; i++)
+					{
+						var columnIndex = i%3;
+						columns[columnIndex] += '<article class="item">';
+						columns[columnIndex] += '<a href="blog-posts/' + blogs[i].page + '" class="image fit"><img src="images/blog-posts/' + blogs[i].image + '" alt="' + blogs[i].title + '" /></a>';
+						columns[columnIndex] += '<header><h3>' + blogs[i].title + '</h3></header>';
+						columns[columnIndex] += '</article>';
+					};
+					columns[0] += '</div>';
+					columns[1] += '</div>';
+					columns[2] += '</div>';
+					var blogsHtml = columns[0] + columns[1] + columns[2];
+					$('#blogsRow').html(blogsHtml);
+				</script>
 		</div>
 
 		<!-- Footer -->
 		<div id="footer">
-
 			<!-- Copyright -->
 				<ul class="copyright">
 					<li>&copy; Tyler Pinho. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
-
 		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.scrollzer.min.js"></script>
-		<script src="assets/js/skel.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script src="assets/js/main.js"></script>
 	</body>
 </html>

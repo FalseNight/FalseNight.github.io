@@ -15,7 +15,15 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
-
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			
 		<!-- Header -->
 			<div id="header">
 
@@ -40,79 +48,70 @@
 
 		<!-- Main -->
 			<div id="main">
-				<!-- Portfolio -->
+				<!-- Portfolio -->				
 					<section id="portfolio" class="two">
 						<div class="container">
-
-							<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="lasthymn.html" class="image fit"><img src="images/lasthymn.jpg" alt="Last Hymn" /></a>
-										<header>
-											<h3>Last Hymn</h3>
-										</header>
-									</article>
-									
-									<article class="item">
-										<a href="pianopanels.html" class="image fit"><img src="images/pianopanels.jpg" alt="Piano Panels" /></a>
-										<header>
-											<h3>Piano Panels</h3>
-										</header>
-									</article>									
-								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="rainfall.html" class="image fit"><img src="images/rainfall4.png" alt="Rainfall" /></a>
-										<header>
-											<h3>Rainfall ~ Do You Still Like This World?</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="tenebris.html" class="image fit"><img src="images/tenebris.png" alt="Tenebris" /></a>
-										<header>
-											<h3>Tenebris</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u$ 12u$(mobile)">
-								<article class="item">
-										<a href="soulstealer.html" class="image fit"><img src="images/soulstealer.jpg" alt="Soulstealer" /></a>
-										<header>
-											<h3>Soulstealer</h3>
-										</header>
-									</article>
-									
-									<article class="item">
-										<a href="switch.html" class="image fit"><img src="images/switch.png" alt="[switch]" /></a>
-										<header>
-											<h3>[switch]</h3>
-										</header>
-									</article>
-								</div>
+							<div id="portfolioRow" class="row">
 							</div>
-
 						</div>
 					</section>
+					<script>
+					var portfolio = [
+					 {
+					   "title": "Rainfall ~ Do You Still Like This World?",
+					   "image": "rainfall4.png",
+					   "page":  "rainfall.html"
+					 },
+					 {
+					   "title": "Last Hymn",
+					   "image": "lasthymn.jpg",
+					   "page":  "lasthymn.html"
+					 },
+					 {
+					   "title": "Piano Panels",
+					   "image": "pianopanels.jpg",
+					   "page":  "pianopanels.html"
+					 },
+					 {
+					   "title": "Tenebris",
+					   "image": "tenebris.png",
+					   "page":  "tenebris.html"
+					 },
+					 {
+					   "title": "Soulstealer",
+					   "image": "soulstealer.jpg",
+					   "page":  "soulstealer.html"
+					 },
+					 {
+					   "title": "[switch]",
+					   "image": "switch.png",
+					   "page":  "switch.html"
+					 }
+					];
+
+					var columns = ['<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">'];
+					for(var i = 0; i< portfolio.length; i++)
+					{
+						var columnIndex = i%3;
+						columns[columnIndex] += '<article class="item">';
+						columns[columnIndex] += '<a href="' + portfolio[i].page + '" class="image fit"><img src="images/' + portfolio[i].image + '" alt="' + portfolio[i].title + '" /></a>';
+						columns[columnIndex] += '<header><h3>' + portfolio[i].title + '</h3></header>';
+						columns[columnIndex] += '</article>';
+					};
+					columns[0] += '</div>';
+					columns[1] += '</div>';
+					columns[2] += '</div>';
+					var portfolioHtml = columns[0] + columns[1] + columns[2];
+					$('#portfolioRow').html(portfolioHtml);
+				</script>
 			</div>
 
 		<!-- Footer -->
 			<div id="footer">
-
 				<!-- Copyright -->
 					<ul class="copyright">
 						<li>&copy; Tyler Pinho. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
-
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
