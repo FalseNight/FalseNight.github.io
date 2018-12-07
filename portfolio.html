@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130579013-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-130579013-1');
+		</script>
+		<title>Tyler Pinho - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			
+		<!-- Header -->
+			<div id="header"></div>
+			<script>
+				$( "#header" ).load( "header.html", function() {
+				  $( "#portfolio-link" ).addClass( "active" );
+				});
+			</script>
+			
+		<!-- Main -->
+			<div id="main">
+				<!-- Portfolio -->				
+					<section id="portfolio" class="two">
+						<div class="container">
+							<div id="portfolioRow" class="row">
+							</div>
+						</div>
+					</section>
+					<script>
+					var portfolio = [
+					 {
+					   "title": "Rainfall ~ Do You Still Like This World?",
+					   "image": "rainfall4.png",
+					   "page":  "rainfall.html"
+					 },
+					 {
+					   "title": "Last Hymn",
+					   "image": "lasthymn.jpg",
+					   "page":  "lasthymn.html"
+					 },
+					 {
+					   "title": "Piano Panels",
+					   "image": "pianopanels.jpg",
+					   "page":  "pianopanels.html"
+					 },
+					 {
+					   "title": "Tenebris",
+					   "image": "tenebris.png",
+					   "page":  "tenebris.html"
+					 },
+					 {
+					   "title": "Soulstealer",
+					   "image": "soulstealer.jpg",
+					   "page":  "soulstealer.html"
+					 },
+					 {
+					   "title": "[switch]",
+					   "image": "switch.png",
+					   "page":  "switch.html"
+					 }
+					];
+
+					var columns = ['<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">'];
+					for(var i = 0; i< portfolio.length; i++)
+					{
+						var columnIndex = i%3;
+						columns[columnIndex] += '<article class="item">';
+						columns[columnIndex] += '<a href="' + portfolio[i].page + '" class="image fit"><img src="images/' + portfolio[i].image + '" alt="' + portfolio[i].title + '" /></a>';
+						columns[columnIndex] += '<header><h3>' + portfolio[i].title + '</h3></header>';
+						columns[columnIndex] += '</article>';
+					};
+					columns[0] += '</div>';
+					columns[1] += '</div>';
+					columns[2] += '</div>';
+					var portfolioHtml = columns[0] + columns[1] + columns[2];
+					$('#portfolioRow').html(portfolioHtml);
+				</script>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Tyler Pinho. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			</div>
+	</body>
+</html>

@@ -6,7 +6,16 @@
 -->
 <html>
 	<head>
-		<title>Tyler Pinho - Portfolio</title>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130579013-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-130579013-1');
+		</script>
+		<title>Tyler Pinho - Blog</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -17,102 +26,118 @@
 	</head>
 	<body>
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-			
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollzer.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+		
 		<!-- Header -->
-			<div id="header">
-
-				<div class="top">
-
-					<!-- Logo -->
-						<div id="logo">
-							<h1 id="title">Tyler Pinho</h1>
-							<p>Web and Game Developer</p>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="blog.html" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Blog</span></a></li>
-								<li><a href="docs/Resume.pdf" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Resume</span></a></li>
-							</ul>
-						</nav>
-				</div>
-			</div>
+			<div id="header"></div>
+			<script>
+				$( "#header" ).load( "header.html", function() {
+				  $( "#blog-link" ).addClass( "active" );
+				});
+			</script>
 
 		<!-- Main -->
-			<div id="main">
-				<!-- Portfolio -->				
-					<section id="portfolio" class="two">
-						<div class="container">
-							<div id="portfolioRow" class="row">
-							</div>
-						</div>
-					</section>
-					<script>
-					var portfolio = [
-					 {
-					   "title": "Rainfall ~ Do You Still Like This World?",
-					   "image": "rainfall4.png",
-					   "page":  "rainfall.html"
+		<div id="main">
+			<!-- Blog -->
+			<section id="blog" class="two">
+				<div class="container">
+					<div id="blogsRow" class="row">
+					</div>
+				</div>
+			</section>
+			<script>
+					var blogs = [
+					{
+					   "title": "On Card Game Archetypes",
+					   "image": "card-game-archetypes.png",
+					   "page":  "card-game-archetypes.html"
+					 },
+					{
+					   "title": "Construction of Mari's Dungeon",
+					   "image": "rainfall-mari-dungeon.png",
+					   "page":  "rainfall-mari-dungeon.html"
+					 },
+					{
+					   "title": "Rainfall Dev Blog #4",
+					   "image": "rainfall-dev-4.png",
+					   "page":  "rainfall-dev-4.html"
+					 },
+					{
+					   "title": "Rainfall Dev Blog #3",
+					   "image": "rainfall-dev-3.png",
+					   "page":  "rainfall-dev-3.html"
+					 },
+					{
+					   "title": "Pixel Perfection",
+					   "image": "pixel-perfection.png",
+					   "page":  "pixel-perfection.html"
 					 },
 					 {
-					   "title": "Last Hymn",
-					   "image": "lasthymn.jpg",
-					   "page":  "lasthymn.html"
+					   "title": "Rainfall Dev Blog #2",
+					   "image": "rainfall-dev-2.png",
+					   "page":  "rainfall-dev-2.html"
 					 },
 					 {
-					   "title": "Piano Panels",
-					   "image": "pianopanels.jpg",
-					   "page":  "pianopanels.html"
+					   "title": "The Characters of Rainfall",
+					   "image": "rainfall-characters.png",
+					   "page":  "rainfall-characters.html"
 					 },
 					 {
-					   "title": "Tenebris",
-					   "image": "tenebris.png",
-					   "page":  "tenebris.html"
+					   "title": "Rainfall Active Choice",
+					   "image": "rainfall-active-choice.png",
+					   "page":  "rainfall-active-choice.html"
 					 },
 					 {
-					   "title": "Soulstealer",
-					   "image": "soulstealer.jpg",
-					   "page":  "soulstealer.html"
+					   "title": "Rainfall Dev Blog #1",
+					   "image": "rainfall-dev-1.png",
+					   "page":  "rainfall-dev-1.html"
 					 },
 					 {
-					   "title": "[switch]",
-					   "image": "switch.png",
-					   "page":  "switch.html"
+					   "title": "Design Patterns: Decorator",
+					   "image": "decorator-pattern.png",
+					   "page":  "decorator-pattern.html"
+					 },
+					 {
+					   "title": "Dead Man's Hand Warrior",
+					   "image": "dead-mans-hand-warrior.png",
+					   "page":  "dead-mans-hand-warrior.html"
+					 },
+					 {
+					   "title": "Design Patterns: Observer",
+					   "image": "observer-pattern.png",
+					   "page":  "observer-pattern.html"
 					 }
 					];
 
 					var columns = ['<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">'];
-					for(var i = 0; i< portfolio.length; i++)
+					for(var i = 0; i< blogs.length; i++)
 					{
 						var columnIndex = i%3;
 						columns[columnIndex] += '<article class="item">';
-						columns[columnIndex] += '<a href="' + portfolio[i].page + '" class="image fit"><img src="images/' + portfolio[i].image + '" alt="' + portfolio[i].title + '" /></a>';
-						columns[columnIndex] += '<header><h3>' + portfolio[i].title + '</h3></header>';
+						columns[columnIndex] += '<a href="blog-posts/' + blogs[i].page + '" class="image fit"><img src="images/blog-posts/' + blogs[i].image + '" alt="' + blogs[i].title + '" /></a>';
+						columns[columnIndex] += '<header><h3>' + blogs[i].title + '</h3></header>';
 						columns[columnIndex] += '</article>';
 					};
 					columns[0] += '</div>';
 					columns[1] += '</div>';
 					columns[2] += '</div>';
-					var portfolioHtml = columns[0] + columns[1] + columns[2];
-					$('#portfolioRow').html(portfolioHtml);
+					var blogsHtml = columns[0] + columns[1] + columns[2];
+					$('#blogsRow').html(blogsHtml);
 				</script>
-			</div>
+		</div>
 
 		<!-- Footer -->
-			<div id="footer">
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Tyler Pinho. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-			</div>
+		<div id="footer">
+			<!-- Copyright -->
+				<ul class="copyright">
+					<li>&copy; Tyler Pinho. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+		</div>
 	</body>
 </html>
