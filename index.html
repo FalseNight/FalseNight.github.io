@@ -54,6 +54,11 @@
 			<script>
 					var blogs = [
 					{
+					   "title": "Rainfall Dev Blog #6",
+					   "image": "rainfall-dev-6.png",
+					   "page":  "rainfall-dev-6.html"
+					 },
+					{
 					   "title": "My Favorite Things 2018",
 					   "image": "my-favorite-things-2018.png",
 					   "page":  "my-favorite-things-2018.html"
@@ -129,21 +134,34 @@
 					   "page":  "observer-pattern.html"
 					 }
 					];
-
-					var columns = ['<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">'];
-					for(var i = 0; i< blogs.length; i++)
-					{
-						var columnIndex = i%3;
-						columns[columnIndex] += '<article class="item">';
-						columns[columnIndex] += '<a href="blog-posts/' + blogs[i].page + '" class="image fit"><img src="images/blog-posts/' + blogs[i].image + '" alt="' + blogs[i].title + '" /></a>';
-						columns[columnIndex] += '<header><h3>' + blogs[i].title + '</h3></header>';
-						columns[columnIndex] += '</article>';
-					};
-					columns[0] += '</div>';
-					columns[1] += '</div>';
-					columns[2] += '</div>';
-					var blogsHtml = columns[0] + columns[1] + columns[2];
-					$('#blogsRow').html(blogsHtml);
+					if ($(window).width() < 961) {
+						var blogsHtml = '<div class="4u 12u$(mobile)">';
+						for(var i = 0; i< blogs.length; i++)
+						{
+							blogsHtml += '<article class="item">';
+							blogsHtml += '<a href="blog-posts/' + blogs[i].page + '" class="image fit"><img src="images/blog-posts/' + blogs[i].image + '" alt="' + blogs[i].title + '" /></a>';
+							blogsHtml += '<header><h3>' + blogs[i].title + '</h3></header>';
+							blogsHtml += '</article>';
+						};
+						blogsHtml += '</div>';
+						$('#blogsRow').html(blogsHtml);
+					}
+					else {
+						var columns = ['<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">','<div class="4u 12u$(mobile)">'];
+						for(var i = 0; i< blogs.length; i++)
+						{
+							var columnIndex = i%3;
+							columns[columnIndex] += '<article class="item">';
+							columns[columnIndex] += '<a href="blog-posts/' + blogs[i].page + '" class="image fit"><img src="images/blog-posts/' + blogs[i].image + '" alt="' + blogs[i].title + '" /></a>';
+							columns[columnIndex] += '<header><h3>' + blogs[i].title + '</h3></header>';
+							columns[columnIndex] += '</article>';
+						};
+						columns[0] += '</div>';
+						columns[1] += '</div>';
+						columns[2] += '</div>';
+						var blogsHtml = columns[0] + columns[1] + columns[2];
+						$('#blogsRow').html(blogsHtml);
+					}					
 				</script>
 		</div>
 
