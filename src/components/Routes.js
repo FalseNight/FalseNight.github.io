@@ -29,7 +29,6 @@ const Routes = () => {
                     )
                 }
                 <Route exact path='/portfolio' component={Portfolio} />
-                <Route exact path='/' component={Home} />
                 <Route exact path={`/${process.env.PUBLIC_URL}`} component={Home} />
                 <Redirect to={`/${process.env.PUBLIC_URL}`} />
             </Switch>

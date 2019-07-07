@@ -8,6 +8,22 @@ export const BlogPostContainer = styled(PageSection)`
     background-color: rgba(0, 0, 0, 0.08);
     padding-top: 88px;
     font-size: 16px;
+
+    @media (max-width: ${breakpoints.lg}px){
+        padding-top: 88px;
+    }
+
+    @media (max-width: ${breakpoints.md}px){
+        padding-top: 88px;
+    }
+
+    @media (max-width: ${breakpoints.sm}px){
+        padding-top: 56px;
+    }
+
+    @media (max-width: ${breakpoints.xs}px){
+        padding-top: 56px;
+    }  
 `;
 
 export const BlogCard = styled.div`
