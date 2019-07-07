@@ -4,7 +4,6 @@ import { Page } from './../../Shared/Page.styles';
 import BlogPost from '../../Shared/BlogPost/BlogPost';
 import { BlogImage } from '../../Shared/BlogPost/BlogPost.styles';
 import Header from "../../Shared/Header/Header";
-import Footer from '../../Shared/Footer/Footer';
 
 import FinalBustsImage from './images/final busts.png';
 import FinalImplementationImage from './images/final implementation.png';
@@ -83,7 +82,6 @@ With the bust complete we reimplement the character into the game and test out s
 Once we are fully satisfied with the design, we mark the character's look as complete and start work on producing other assets which relate to the character, such as that character’s RPG sprites and their animations.
 				</p>              
                 </BlogPost>
-                <Footer />
             </Page>
         );
     }

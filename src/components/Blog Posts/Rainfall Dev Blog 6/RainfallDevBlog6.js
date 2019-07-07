@@ -4,7 +4,6 @@ import { Page } from './../../Shared/Page.styles';
 import BlogPost from '../../Shared/BlogPost/BlogPost';
 import { BlogImage } from '../../Shared/BlogPost/BlogPost.styles';
 import Header from "../../Shared/Header/Header";
-import Footer from '../../Shared/Footer/Footer';
 
 import CityAtNightImage from './images/City at Night.png';
 import GoalImage from './images/Goal.png';
@@ -77,7 +76,6 @@ class RainfallDevBlog6 extends Component {
 				There’s also going to be another handful of quality of life features and bug fixes we’ll be adding in to prepare for our demo. We’ll be swapping out all of our text components for Text Mesh Pro and redoing our dialogue to accommodate it. More optional lockon acknowledge events will be added throughout the city in addition to creating some of our first optional scenes.
 				</p>
                 </BlogPost>
-                <Footer />
             </Page>
         );
     }

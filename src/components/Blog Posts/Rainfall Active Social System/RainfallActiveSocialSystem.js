@@ -4,7 +4,6 @@ import { Page } from './../../Shared/Page.styles';
 import BlogPost from '../../Shared/BlogPost/BlogPost';
 import { BlogImage } from '../../Shared/BlogPost/BlogPost.styles';
 import Header from "../../Shared/Header/Header";
-import Footer from '../../Shared/Footer/Footer';
 
 import InvestigationsImage from './images/investigations.png';
 import ChoicesImage from './images/choices.jpg';
@@ -184,7 +183,6 @@ class RainfallActiveSocialSystem extends Component {
                         In Rainfall, we believe that the active choice component of a scene along with its many conclusions will be critical in allowing our game to transform traditionally static visual novel elements into more of an exploratory theatre piece, where the player is the driver behind what path the game will take. While the individual concepts aren’t unique or revolutionary, by designing every scene with this degree of flexibility we hope that players will approach a scene in a similar fashion to the kind of encounters one might find in tabletop role-playing games like Dungeons and Dragons. The player should feel compelled to explore the scene space and have a desire to experience Jin’s character through their own actions in meaningful ways. While selecting the option to give alcohol-free beer to Mari is a comical scene, small additions like actually grabbing a beer and delivering it to Mari will more effectively place the player in the role of Jin and increase how memorable the scene is and how much it enhances their experience by tying such actions to the expression of their player agency in the world of Rainfall and how they choose to pilot Jin through it.
                     </p>                   
                 </BlogPost>
-                <Footer />
             </Page>
         );
     }

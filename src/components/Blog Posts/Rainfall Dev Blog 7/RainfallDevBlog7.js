@@ -4,7 +4,6 @@ import { Page } from './../../Shared/Page.styles';
 import BlogPost from '../../Shared/BlogPost/BlogPost';
 import { BlogImage } from '../../Shared/BlogPost/BlogPost.styles';
 import Header from "../../Shared/Header/Header";
-import Footer from '../../Shared/Footer/Footer';
 
 import MadameImage from './images/madame.png';
 import MaleIdolImage from './images/male-idol.png';
@@ -87,7 +86,6 @@ We’ve replaced all of our text components in the game in favor of Text Mesh Pr
 We’re still finishing up writing up Arc 5 scenes which will then be followed by rewriting our tutorial section of the game in Arc 1 to both be a better experience and more thematically consistent with the rest of the game. We’ll also be finishing up the initial Underground section and making the appropriate changes to the City to show off the Underground.
 				</p>
                 </BlogPost>
-                <Footer />
             </Page>
         );
     }

@@ -31,6 +31,20 @@ import decoratorPatternImage from '../assets/images/blog-posts/decorator-pattern
 import deadmansHandWarriorImage from '../assets/images/blog-posts/dead-mans-hand-warrior.png';
 import observerPatternImage from '../assets/images/blog-posts/observer-pattern.png';
 import MyFavoriteThings2018 from '../components/Blog Posts/My Favorite Things 2018/MyFavoriteThings2018';
+import Rainfall2018 from '../components/Blog Posts/Rainfall 2018/Rainfall2018';
+import RainfallDevBlog5 from '../components/Blog Posts/Rainfall Dev Blog 5/RainfallDevBlog5';
+import CardGameArchetypes from '../components/Blog Posts/On Card Game Archetypes/CardGameArchetypes';
+import ConstructionOfMarisDungeon from '../components/Blog Posts/Construction of Maris Dungeon/ConstructionOfMarisDungeon';
+import RainfallDevBlog4 from '../components/Blog Posts/Rainfall Dev Blog 4/RainfallDevBlog4';
+import RainfallDevBlog3 from '../components/Blog Posts/Rainfall Dev Blog 3/RainfallDevBlog3';
+import RainfallDevBlog1 from '../components/Blog Posts/Rainfall Dev Blog 1/RainfallDevBlog1';
+import RainfallDevBlog2 from '../components/Blog Posts/Rainfall Dev Blog 2/RainfallDevBlog2';
+import CharactersOfRainfall from '../components/Blog Posts/Characters of Rainfall/CharactersOfRainfall';
+import PixelPerfection from '../components/Blog Posts/Pixel Perfection/PixelPerfection';
+import RainfallActiveChoice from '../components/Blog Posts/Rainfall Active Choice/RainfallActiveChoice';
+import DesignPatternsObserver from '../components/Blog Posts/Design Patterns Observer/DesignPatternsObserver';
+import DesignPatternsDecorator from '../components/Blog Posts/Design Patterns Decorator/DesignPatternsDecorator';
+import DeadMansHandWarrior from '../components/Blog Posts/Dead Mans Hand Warrior/DeadMansHandWarrior';
 
 
 export default [
@@ -80,84 +94,98 @@ export default [
     title: "Rainfall: 2018 Year In Review",
     thumbnail: rainfall2018Image,
     route:  "/rainfall-2018",
+    component: Rainfall2018,
     tags: [ "rainfall" ],
   },
 {
     title: "Rainfall Dev Blog #5",
     thumbnail: rainfallDevBlog5Image,
     route:  "/rainfall-dev-blog-5",
+    component: RainfallDevBlog5,
     tags: [ "rainfall" ],
   },
 {
     title: "On Card Game Archetypes",
     thumbnail: cardGameArchetypesImage,
     route:  "/card-game-archetypes",
+    component: CardGameArchetypes,
     tags: [ "game design" ],
   },
 {
     title: "Construction of Mari's Dungeon",
     thumbnail: rainfallMariDungeonImage,
     route:  "/rainfall-mari-dungeon",
+    component: ConstructionOfMarisDungeon,
     tags: [ "rainfall" ],
   },
 {
     title: "Rainfall Dev Blog #4",
     thumbnail: rainfallDevBlog4Image,
     route:  "/rainfall-dev-blog-4",
+    component: RainfallDevBlog4,
     tags: [ "rainfall" ],
   },
 {
     title: "Rainfall Dev Blog #3",
     thumbnail: rainfallDevBlog3Image,
     route:  "/rainfall-dev-blog-3",
+    component: RainfallDevBlog3,
     tags: [ "rainfall" ],
   },
 {
     title: "Pixel Perfection",
     thumbnail: pixelPerfectionImage,
     route:  "/pixel-perfection",
+    component: PixelPerfection,
     tags: [ "rainfall", "game design" ],
   },
   {
     title: "Rainfall Dev Blog #2",
     thumbnail: rainfallDevBlog2Image,
     route:  "/rainfall-dev-blog-2",
+    component: RainfallDevBlog2,
     tags: [ "rainfall" ],
   },
   {
     title: "The Characters of Rainfall",
     thumbnail: rainfallCharactersImage,
     route:  "/rainfall-characters",
+    component: CharactersOfRainfall,
     tags: [ "rainfall" ],
   },
   {
     title: "Rainfall Active Choice",
     thumbnail: rainfallActiveChoiceImage,
     route:  "/rainfall-active-choice",
+    component: RainfallActiveChoice,
     tags: [ "rainfall" ],
   },
   {
     title: "Rainfall Dev Blog #1",
     thumbnail: rainfallDevBlog1Image,
     route:  "/rainfall-dev-blog-1",
+    component: RainfallDevBlog1,
     tags: [ "rainfall" ],
   },
   {
     title: "Design Patterns: Decorator",
     thumbnail: decoratorPatternImage,
     route:  "/decorator-pattern",
+    component: DesignPatternsDecorator,
     tags: [ "c#" ],
   },
   {
     title: "Dead Man's Hand Warrior",
     thumbnail: deadmansHandWarriorImage,
     route:  "/dead-mans-hand-warrior",
+    component: DeadMansHandWarrior,
     tags: [ "game design" ],
   },
   {
     title: "Design Patterns: Observer",
     thumbnail: observerPatternImage,
     route:  "/observer-pattern",
+    component: DesignPatternsObserver,
     tags: [ "c#" ],
   }
 ];

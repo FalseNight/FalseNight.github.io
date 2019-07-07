@@ -8,7 +8,6 @@ import About from "../Shared/About/About";
 import DisplayCarousel from '../Shared/DisplayCarousel/DisplayCarousel';
 
 import blogPosts from '../../constants/blogPosts';
-import Footer from '../Shared/Footer/Footer';
 
 import FlourishImage from '../../assets/textures/flourish.png';
 
@@ -21,7 +20,7 @@ class Home extends Component {
                     <Flourish src={FlourishImage} />
                     <About />
                     <DisplayCarousel projects={blogPosts}/>
-                    <Footer />
+
                 </HomeContent>
             </Page>
         );

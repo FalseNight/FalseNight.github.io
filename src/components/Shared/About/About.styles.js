@@ -10,7 +10,7 @@ export const AboutContainer = styled(PageSection)`
 
 export const ProfilePicture = styled.img`
     height: 300px;
-    width: 300px;
+    width: 424px;
 
     margin-right: 60px;
 

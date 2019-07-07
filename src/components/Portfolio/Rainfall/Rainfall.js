@@ -4,7 +4,6 @@ import { Page } from './../../Shared/Page.styles';
 import BlogPost from '../../Shared/BlogPost/BlogPost';
 import { BlogImage } from '../../Shared/BlogPost/BlogPost.styles';
 import Header from "../../Shared/Header/Header";
-import Footer from '../../Shared/Footer/Footer';
 
 import Rainfall3Image from '../../../assets/images/portfolio/rainfall3.png';
 import Rainfall6Image from '../../../assets/images/portfolio/rainfall6.png';
@@ -47,7 +46,6 @@ class Rainfall extends Component {
 					<BlogImage src={Rainfall6Image} alt="Rainfall" />
 					<BlogImage src={Rainfall7Image} alt="Rainfall" />	            
                 </BlogPost>
-                <Footer />
             </Page>
         );
     }

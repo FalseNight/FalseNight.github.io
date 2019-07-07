@@ -50,13 +50,13 @@ export const BackButtonIcon = styled.i`
 `;
 
 export const BlogImage = styled.img`
-    width: 100%;
+    max-width: 100%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
 
     @media (min-width: ${breakpoints.lg}px){
-        width: 60%;
+        max-width: 60%;
     }
 `;
 

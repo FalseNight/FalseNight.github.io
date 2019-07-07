@@ -4,7 +4,6 @@ import { Page } from './../../Shared/Page.styles';
 import BlogPost from '../../Shared/BlogPost/BlogPost';
 import { BlogImage, YoutubeVideo } from '../../Shared/BlogPost/BlogPost.styles';
 import Header from "../../Shared/Header/Header";
-import Footer from '../../Shared/Footer/Footer';
 
 import LastHymnImage from '../../../assets/images/portfolio/lasthymn.jpg';
 import LastHymnDownload from '../../../assets/downloads/LastHymn.rar';
@@ -34,7 +33,6 @@ class LastHymn extends Component {
 	                <a href={LastHymnDownload}>Download Last Hymn</a><br/>
                 </p>  
                 </BlogPost>
-                <Footer />
             </Page>
         );
     }

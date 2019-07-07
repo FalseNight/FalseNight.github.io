@@ -4,7 +4,6 @@ import { Page } from './../../Shared/Page.styles';
 import BlogPost from '../../Shared/BlogPost/BlogPost';
 import { BlogImage, YoutubeVideo } from '../../Shared/BlogPost/BlogPost.styles';
 import Header from "../../Shared/Header/Header";
-import Footer from '../../Shared/Footer/Footer';
 
 import BunnyGirlSenpaiImage from './images/bunny-girl-senpai.png';
 import CelesteImage from './images/celeste.png';
@@ -130,7 +129,6 @@ Luckily this Fall season has been stronger for me with Seishun Buta Yarou wa Bun
 Instead the best show I watched this year was Koutetsujou no Kabaneri. Besides its aesthetic of Post-apocalyptic Dieselpunk mixed with samurais, which already sold me on the show the main character is impeccable. Ikoma has a fantastic character arc and reminds me of Houseki no Kuni’s Phos’s character arc in a way. Both characters trying to better themselves through self-sacrifice so that they can protect others and both the positive and negative emotions that erupt from that is one of the main reasons why I watched their shows. Kabaneri is also just a beautiful show that goes on for just the right length of time. I’d call Kabaneri the definitive Light 8 show. 
 				</p>
                 </BlogPost>
-                <Footer />
             </Page>
         );
     }

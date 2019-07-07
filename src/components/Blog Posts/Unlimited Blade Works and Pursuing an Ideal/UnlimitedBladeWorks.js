@@ -4,7 +4,6 @@ import { Page } from './../../Shared/Page.styles';
 import BlogPost from '../../Shared/BlogPost/BlogPost';
 import { BlogImage } from '../../Shared/BlogPost/BlogPost.styles';
 import Header from "../../Shared/Header/Header";
-import Footer from '../../Shared/Footer/Footer';
 
 import UnlimitedBladeWorksImage from './images/ubw.gif';
 
@@ -48,7 +47,6 @@ class UnlimitedBladeWorks extends Component {
 				Often times people either optimistically chase their desires while being oblivious to their faults or will abandon those desires entirely because of their faults. But to take the Unlimited Blade Works ideal and chase those desires and dreams even in spite of their faults. There’s something beautiful in this vision, even outside of the realm of fantasy.
 				</p>
                 </BlogPost>
-                <Footer />
             </Page>
         );
     }

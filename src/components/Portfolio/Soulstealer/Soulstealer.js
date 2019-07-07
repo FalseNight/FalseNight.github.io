@@ -4,7 +4,6 @@ import { Page } from './../../Shared/Page.styles';
 import BlogPost from '../../Shared/BlogPost/BlogPost';
 import { BlogImage } from '../../Shared/BlogPost/BlogPost.styles';
 import Header from "../../Shared/Header/Header";
-import Footer from '../../Shared/Footer/Footer';
 
 import SoulstealerImage from '../../../assets/images/portfolio/soulstealer.jpg';
 import SoulstealerDownload from '../../../assets/downloads/Soulstealer.rar';
@@ -33,7 +32,6 @@ class Soulstealer extends Component {
 	                <a href={SoulstealerDownload}>Download Soulstealer</a><br/>
                 </p>
                 </BlogPost>
-                <Footer />
             </Page>
         );
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import profilePic from "../../../assets/images/profile.png";
+import profilePic from "../../../assets/images/profile.jpg";
 import { AboutContainer, ProfilePicture, AboutText, Title, Subtitle } from './About.styles';
 
 const About = () => {
