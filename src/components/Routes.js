@@ -16,7 +16,7 @@ const Routes = () => {
     logPageView();
 
     return (
-        <Router> 
+        <Router basename={process.env.PUBLIC_URL}> 
             <Switch >
                 {
                     blogPosts.map( ({route, component}) => 
