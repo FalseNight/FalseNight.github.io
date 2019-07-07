@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactGA from 'react-ga';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter  as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 import Home from './home/Home';
 
