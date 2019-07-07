@@ -20,7 +20,6 @@ class Home extends Component {
                     <Flourish src={FlourishImage} />
                     <About />
                     <DisplayCarousel projects={blogPosts}/>
-
                 </HomeContent>
             </Page>
         );

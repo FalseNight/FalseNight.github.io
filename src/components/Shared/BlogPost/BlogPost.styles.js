@@ -2,6 +2,13 @@ import styled from 'styled-components';
 import { PageSection } from '../Page.styles';
 import breakpoints from '../../../constants/breakpoints';
 
+export const Flourish = styled.img`
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: .1;
+`;
 export const BlogPostContainer = styled(PageSection)`
     display: grid;
     grid-template-columns: auto;
