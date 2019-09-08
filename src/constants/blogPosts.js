@@ -46,8 +46,17 @@ import DesignPatternsObserver from '../components/Blog Posts/Design Patterns Obs
 import DesignPatternsDecorator from '../components/Blog Posts/Design Patterns Decorator/DesignPatternsDecorator';
 import DeadMansHandWarrior from '../components/Blog Posts/Dead Mans Hand Warrior/DeadMansHandWarrior';
 
+import LessonsLearnedFromClassicWow from '../components/Blog Posts/3 Lessons Learned From Classic WoW/LessonsLearnedFromClassicWow';
+import lessonsLearnedFromClassicWowImage from '../assets/images/blog-posts/3-lessons-learned-from-classic-wow.jpg';
 
 export default [
+  {
+    title: "3 Lessons Learned From Classic WoW",
+    thumbnail: lessonsLearnedFromClassicWowImage,
+    route:  "/3-lessons-learned-from-classic-wow",
+    component: LessonsLearnedFromClassicWow,
+    tags: [ "game design" ]
+  },
 {
     title: "Rainfall’s Active Social System",
     thumbnail: rainfallActiveSocialSystemImage,
