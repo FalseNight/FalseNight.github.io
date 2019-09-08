@@ -19,7 +19,7 @@ class LessonsLearnedFromClassicWow extends Component {
 					<strong>3 Lessons Learned From Classic WoW<br/></strong>
 				</h2>
 				<h2>
-					<strong>1. Convenience can be Detrimental<br/></strong>
+					<strong>1. Convenience can be detrimental<br/></strong>
 				</h2>
 				<p>
 				As humans we seek out anything that will make our lives easier. Convenience is a gift that allows us to work less and do more. However, achieving convenience comes at a cost, to do something easier or with less work conversely means we no longer have to work or hard or struggle to achieve what we want. But it's in adversity that we make meaningful memories and grow as people. This double-edged sword needs to be balanced otherwise you’ll end up in a situation where you no longer need to do anything to succeed or on  the opposite side where despite what you do you will not succeed.
