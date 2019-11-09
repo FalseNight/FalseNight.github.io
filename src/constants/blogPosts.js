@@ -49,7 +49,17 @@ import DeadMansHandWarrior from '../components/Blog Posts/Dead Mans Hand Warrior
 import LessonsLearnedFromClassicWow from '../components/Blog Posts/3 Lessons Learned From Classic WoW/LessonsLearnedFromClassicWow';
 import lessonsLearnedFromClassicWowImage from '../assets/images/blog-posts/3-lessons-learned-from-classic-wow.jpg';
 
+import AnAdmiralsPride from '../components/Blog Posts/An Admirals Pride/AnAdmiralsPride';
+import anAdmiralsPrideImage from '../assets/images/blog-posts/an-admirals-pride.jpg';
+
 export default [
+  {
+    title: "An Admiral's Pride: Game Design Lessons from KanColle Arcade",
+    thumbnail: anAdmiralsPrideImage,
+    route:  "/an-admirals-pride",
+    component: AnAdmiralsPride,
+    tags: [ "game design" ]
+  },
   {
     title: "3 Lessons Learned From Classic WoW",
     thumbnail: lessonsLearnedFromClassicWowImage,

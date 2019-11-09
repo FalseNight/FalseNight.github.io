@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Label from "../Label";
-import { ProjectContainer, ProjectImage, InformationBar } from './Project.styles';
+import { ProjectContainer, ProjectImage, InformationBar, LabelWrapper } from './Project.styles';
 
 const goToProject = project => {
     // eslint-disable-next-line
@@ -14,9 +14,9 @@ const Project = ({ project }) => {
             <ProjectImage alt={project.title} src={`${project.thumbnail}`} />
             <InformationBar>
                 <div>{project.title}</div>
-                <div>
+                <LabelWrapper>
                     { project.tags.map( tag => <Label minimalStyle="true" key={tag} label={tag} /> ) }
-                </div>
+                </LabelWrapper>
             </InformationBar>
         </ProjectContainer>
     );

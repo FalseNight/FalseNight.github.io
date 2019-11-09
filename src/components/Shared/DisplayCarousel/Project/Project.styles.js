@@ -57,3 +57,7 @@ export const InformationBar = styled.div`
     align-items: center;
     justify-content: space-between;
 `;
+
+export const LabelWrapper = styled.div`
+    white-space: nowrap;
+`;
