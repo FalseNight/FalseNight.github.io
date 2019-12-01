@@ -52,7 +52,17 @@ import lessonsLearnedFromClassicWowImage from '../assets/images/blog-posts/3-les
 import AnAdmiralsPride from '../components/Blog Posts/An Admirals Pride/AnAdmiralsPride';
 import anAdmiralsPrideImage from '../assets/images/blog-posts/an-admirals-pride.jpg';
 
+import RainfallDevBlog8 from '../components/Blog Posts/Rainfall Dev Blog 8/RainfallDevBlog8';
+import rainfallDevBlog8Image from '../assets/images/blog-posts/rainfall-dev-8.png';
+
 export default [
+  {
+    title: "Rainfall Dev Blog #8",
+    thumbnail: rainfallDevBlog8Image,
+    route:  "/rainfall-dev-blog-8",
+    component: RainfallDevBlog8,
+    tags: [ "rainfall" ],
+  },
   {
     title: "An Admiral's Pride: Game Design Lessons from KanColle Arcade",
     thumbnail: anAdmiralsPrideImage,
