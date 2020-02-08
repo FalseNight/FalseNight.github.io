@@ -55,7 +55,17 @@ import anAdmiralsPrideImage from '../assets/images/blog-posts/an-admirals-pride.
 import RainfallDevBlog8 from '../components/Blog Posts/Rainfall Dev Blog 8/RainfallDevBlog8';
 import rainfallDevBlog8Image from '../assets/images/blog-posts/rainfall-dev-8.png';
 
+import Rainfall2019 from '../components/Blog Posts/Rainfall 2019/Rainfall2019';
+import rainfall2019Image from '../assets/images/blog-posts/rainfall-2019.png';
+
 export default [
+  {
+    title: "Rainfall: 2019 Year In Review",
+    thumbnail: rainfall2019Image,
+    route:  "/rainfall-2019",
+    component: Rainfall2019,
+    tags: [ "rainfall" ],
+  },
   {
     title: "Rainfall Dev Blog #8",
     thumbnail: rainfallDevBlog8Image,
