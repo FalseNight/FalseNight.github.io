@@ -58,7 +58,17 @@ import rainfallDevBlog8Image from '../assets/images/blog-posts/rainfall-dev-8.pn
 import Rainfall2019 from '../components/Blog Posts/Rainfall 2019/Rainfall2019';
 import rainfall2019Image from '../assets/images/blog-posts/rainfall-2019.png';
 
+import RainfallDevBlog9 from '../components/Blog Posts/Rainfall Dev Blog 9/RainfallDevBlog9';
+import rainfallDevBlog9Image from '../assets/images/blog-posts/rainfall-dev-9.png';
+
 export default [
+  {
+    title: "Rainfall Dev Blog #9: January - April 2020",
+    thumbnail: rainfallDevBlog9Image,
+    route:  "/rainfall-dev-blog-9",
+    component: RainfallDevBlog9,
+    tags: [ "rainfall" ],
+  },
   {
     title: "Rainfall: 2019 Year In Review",
     thumbnail: rainfall2019Image,
