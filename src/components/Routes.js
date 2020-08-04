@@ -9,6 +9,7 @@ import portfolio from '../constants/portfolio';
 import Portfolio from './Portfolio/Portfolio';
 
 const Routes = () => { 
+    const reload = () => window.location.reload();
     const logPageView = () => {
         ReactGA.set({ page: window.location.pathname + window.location.search });
         ReactGA.pageview(window.location.pathname + window.location.search);
@@ -30,6 +31,7 @@ const Routes = () => {
                 }
                 <Route exact path='/portfolio' component={Portfolio} />
                 <Route exact path={`/${process.env.PUBLIC_URL}`} component={Home} />
+                <Route path="/riot.txt" onEnter={reload} />
                 <Redirect to={`/${process.env.PUBLIC_URL}`} />
             </Switch>
         </Router>
