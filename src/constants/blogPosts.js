@@ -61,7 +61,17 @@ import rainfall2019Image from '../assets/images/blog-posts/rainfall-2019.png';
 import RainfallDevBlog9 from '../components/Blog Posts/Rainfall Dev Blog 9/RainfallDevBlog9';
 import rainfallDevBlog9Image from '../assets/images/blog-posts/rainfall-dev-9.png';
 
+import MoAstray from '../components/Blog Posts/MO Astray/MoAstray';
+import moAstrayImage from '../assets/images/blog-posts/mo.jpg';
+
 export default [
+  {
+    title: "MO: Astray - Almost a Masterpiece",
+    thumbnail: moAstrayImage,
+    route:  "/mo-astray",
+    component: MoAstray,
+    tags: [ "game design" ],
+  },
   {
     title: "Rainfall Dev Blog #9: January - April 2020",
     thumbnail: rainfallDevBlog9Image,
