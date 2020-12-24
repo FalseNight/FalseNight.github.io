@@ -67,7 +67,17 @@ import moAstrayImage from '../assets/images/blog-posts/mo.jpg';
 import RainfallDevBlog10 from '../components/Blog Posts/Rainfall Dev Blog 10/RainfallDevBlog10';
 import rainfallDevBlog10Image from '../assets/images/blog-posts/rainfall-dev-10.png';
 
+import MyFavoriteThings2019 from '../components/Blog Posts/My Favorite Things 2019/MyFavoriteThings2019';
+import myFavoriteThings2019Image from '../assets/images/blog-posts/my-favorite-things-2019.jpg';
+
 export default [
+  {
+    title: "My Favorite Things 2019",
+    thumbnail: myFavoriteThings2019Image,
+    route:  "/my-favorite-things-2019",
+    component: MyFavoriteThings2019,
+    tags: [ "anime", "game design" ],
+  },
   {
     title: "Rainfall Dev Blog #10: May - August 2020",
     thumbnail: rainfallDevBlog10Image,
