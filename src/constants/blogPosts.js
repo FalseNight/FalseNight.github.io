@@ -70,7 +70,17 @@ import rainfallDevBlog10Image from '../assets/images/blog-posts/rainfall-dev-10.
 import MyFavoriteThings2019 from '../components/Blog Posts/My Favorite Things 2019/MyFavoriteThings2019';
 import myFavoriteThings2019Image from '../assets/images/blog-posts/my-favorite-things-2019.jpg';
 
+import FailuresOfLeagueDraft from '../components/Blog Posts/Failures of the Modern League of Legends Draft/FailuresOfLeagueDraft';
+import failuresOfLeagueDraftImage from '../assets/images/blog-posts/failures-of-league-draft.png';
+
 export default [
+  {
+    title: "Failures of the Modern League of Legends Draft",
+    thumbnail: failuresOfLeagueDraftImage,
+    route:  "/failures-of-league-draft",
+    component: FailuresOfLeagueDraft,
+    tags: [ "game design" ],
+  },
   {
     title: "My Favorite Things 2019",
     thumbnail: myFavoriteThings2019Image,
