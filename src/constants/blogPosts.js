@@ -73,8 +73,17 @@ import myFavoriteThings2019Image from '../assets/images/blog-posts/my-favorite-t
 import FailuresOfLeagueDraft from '../components/Blog Posts/Failures of the Modern League of Legends Draft/FailuresOfLeagueDraft';
 import failuresOfLeagueDraftImage from '../assets/images/blog-posts/failures-of-league-draft.png';
 
+import RainfallDevBlog11 from '../components/Blog Posts/Rainfall Dev Blog 11/RainfallDevBlog11';
+import rainfallDevBlog11Image from '../assets/images/blog-posts/rainfall-dev-11.png';
+
 export default [
   {
+    title: "Rainfall Dev Blog #11: September 2020 - May 2021",
+    thumbnail: rainfallDevBlog11Image,
+    route:  "/rainfall-dev-blog-11",
+    component: RainfallDevBlog11,
+    tags: [ "rainfall" ],
+  },{
     title: "Failures of the Modern League of Legends Draft",
     thumbnail: failuresOfLeagueDraftImage,
     route:  "/failures-of-league-draft",
