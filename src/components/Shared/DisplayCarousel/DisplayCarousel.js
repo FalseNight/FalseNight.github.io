@@ -35,15 +35,17 @@ class DisplayCarousel extends PureComponent {
     }
 
     render () {      
-        const { projects } = this.props;
+        const { projects, showTags } = this.props;
         const { activeLabels } = this.state;
 
         const tags = getAllTagsFromSet(projects);
         return (
             <DisplayCarouselContainer>
-                <TagsWrapper>
-                    <TagsContainer tags={tags} activeLabels={activeLabels} onLabelClick={this.onLabelClick} />
-                </TagsWrapper>
+                {showTags && 
+                    <TagsWrapper>
+                        <TagsContainer tags={tags} activeLabels={activeLabels} onLabelClick={this.onLabelClick} />
+                    </TagsWrapper>
+                }
                 <ProjectsContainer projects={projects} activeLabels={activeLabels} />
             </DisplayCarouselContainer>
         );
@@ -52,6 +54,7 @@ class DisplayCarousel extends PureComponent {
 
 DisplayCarousel.propTypes = {
     projects: PropTypes.array.isRequired,
+    showTags: PropTypes.bool
 };
 
 export default withRouter(DisplayCarousel);

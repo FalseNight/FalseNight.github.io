@@ -5,11 +5,9 @@ import BlogPost from '../../Shared/BlogPost/BlogPost';
 import { BlogImage } from '../../Shared/BlogPost/BlogPost.styles';
 import Header from "../../Shared/Header/Header";
 
-import Rainfall3Image from '../../../assets/images/portfolio/rainfall3.png';
-import Rainfall6Image from '../../../assets/images/portfolio/rainfall6.png';
-import Rainfall7Image from '../../../assets/images/portfolio/rainfall7.png';
 import Rainfall8Image from '../../../assets/images/portfolio/rainfall8.png';
 import blogPosts from '../../../constants/blogPosts';
+import DisplayCarousel from '../../Shared/DisplayCarousel/DisplayCarousel';
 
 class Rainfall extends Component {
     render = () => {      
@@ -34,17 +32,7 @@ class Rainfall extends Component {
 				<h2>
 					<strong>Development Blog Posts<br/></strong>
 				</h2>
-                    {
-                        blogPosts.filter((blogPost) => blogPost.tags.includes('rainfall')).map( (blogPost) => 
-                            <React.Fragment><a href={blogPost.route}>{blogPost.title}</a><br/></React.Fragment>
-                        )
-                    }					
-				<h2>
-					<strong>Screenshots<br/></strong>
-                </h2>
-					<BlogImage src={Rainfall3Image} alt="Rainfall" />
-					<BlogImage src={Rainfall6Image} alt="Rainfall" />
-					<BlogImage src={Rainfall7Image} alt="Rainfall" />	            
+				<DisplayCarousel projects={blogPosts.filter((blogPost) => blogPost.tags.includes('rainfall'))} />						       
                 </BlogPost>
             </Page>
         );

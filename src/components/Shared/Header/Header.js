@@ -8,7 +8,8 @@ const Header = (props, currentScroll) => {
     return (
         <HeaderContainer className={classNames({ 'isElevated': currentScroll !== 0 })}>
             <HeaderLink key='home' onClick={ev => { props.history.push('/');} }>{'home'}</HeaderLink>
-            <HeaderLink key='portfolio' onClick={ev => { props.history.push('/portfolio');} }>{'portfolio'}</HeaderLink>           
+            <HeaderLink key='rainfall' onClick={ev => { props.history.push('/rainfall');} }>{'rainfall'}</HeaderLink>
+            <HeaderLink key='portfolio' onClick={ev => { props.history.push('/portfolio');} }>{'portfolio'}</HeaderLink>            
         </HeaderContainer>
     );  
 }

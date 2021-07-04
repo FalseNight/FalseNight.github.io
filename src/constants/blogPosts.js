@@ -185,7 +185,7 @@ export default [
     thumbnail: myFavoriteThings2018Image,
     route:  "/my-favorite-things-2018",
     component: MyFavoriteThings2018,
-    tags: [ "rainfall", "anime", "game design" ],
+    tags: [ "anime", "game design" ],
   },
 {
     title: "Rainfall: 2018 Year In Review",

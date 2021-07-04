@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { PageSection } from '../../Shared/Page.styles';
 
-export const DisplayCarouselContainer = styled(PageSection)`
+export const DisplayCarouselContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 16px;

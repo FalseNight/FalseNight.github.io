@@ -79,7 +79,7 @@ export const BlogImage = styled.img`
     margin-right: auto;
 
     @media (min-width: ${breakpoints.lg}px){
-        max-width: 60%;
+        max-width: 80%;
     }
 `;
 
