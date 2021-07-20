@@ -30,7 +30,7 @@ class Rainfall extends Component {
 				The game uses an Active Social System, where social interaction and dialogue evolve from turn-based to real-time events. Static paths have been replaced by dynamic opportunities. Gathering rumors reveals new chat options, ignoring characters may change their reactions, and deciding how and where you interact with characters will affect how they view you. It's not just what you say, but what you do that decides the outcome.
 	            </p>
 				<h2>
-					<strong>Development Blog Posts<br/></strong>
+					<strong>Development Blogs<br/></strong>
 				</h2>
 				<DisplayCarousel projects={blogPosts.filter((blogPost) => blogPost.tags.includes('rainfall'))} />						       
                 </BlogPost>

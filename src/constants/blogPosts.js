@@ -76,7 +76,17 @@ import failuresOfLeagueDraftImage from '../assets/images/blog-posts/failures-of-
 import RainfallDevBlog11 from '../components/Blog Posts/Rainfall Dev Blog 11/RainfallDevBlog11';
 import rainfallDevBlog11Image from '../assets/images/blog-posts/rainfall-dev-11.png';
 
+import MyFavoriteThings2020 from '../components/Blog Posts/My Favorite Things 2020/MyFavoriteThings2020';
+import myFavoriteThings2020Image from '../assets/images/blog-posts/my-favorite-things-2020.jpg';
+
 export default [
+  {
+    title: "My Favorite Things 2020",
+    thumbnail: myFavoriteThings2020Image,
+    route:  "/my-favorite-things-2020",
+    component: MyFavoriteThings2020,
+    tags: [ "anime", "game design" ],
+  },
   {
     title: "Rainfall Dev Blog #11: September 2020 - May 2021",
     thumbnail: rainfallDevBlog11Image,
