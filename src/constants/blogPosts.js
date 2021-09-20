@@ -79,7 +79,17 @@ import rainfallDevBlog11Image from '../assets/images/blog-posts/rainfall-dev-11.
 import MyFavoriteThings2020 from '../components/Blog Posts/My Favorite Things 2020/MyFavoriteThings2020';
 import myFavoriteThings2020Image from '../assets/images/blog-posts/my-favorite-things-2020.jpg';
 
+import RainfallDevBlog12 from '../components/Blog Posts/Rainfall Dev Blog 12/RainfallDevBlog12';
+import rainfallDevBlog12Image from '../assets/images/blog-posts/rainfall-dev-12.png';
+
 export default [
+  {
+    title: "Rainfall Dev Blog #12: June - July 2021",
+    thumbnail: rainfallDevBlog12Image,
+    route:  "/rainfall-dev-blog-12",
+    component: RainfallDevBlog12,
+    tags: [ "rainfall" ],
+  },
   {
     title: "My Favorite Things 2020",
     thumbnail: myFavoriteThings2020Image,
