@@ -82,8 +82,17 @@ import myFavoriteThings2020Image from '../assets/images/blog-posts/my-favorite-t
 import RainfallDevBlog12 from '../components/Blog Posts/Rainfall Dev Blog 12/RainfallDevBlog12';
 import rainfallDevBlog12Image from '../assets/images/blog-posts/rainfall-dev-12.png';
 
+import RainfallDevBlog13 from '../components/Blog Posts/Rainfall Dev Blog 13/RainfallDevBlog13';
+import rainfallDevBlog13Image from '../assets/images/blog-posts/rainfall-dev-13.png';
+
 export default [
   {
+    title: "Rainfall Dev Blog #13: Aug - Oct 2021",
+    thumbnail: rainfallDevBlog13Image,
+    route:  "/rainfall-dev-blog-13",
+    component: RainfallDevBlog13,
+    tags: [ "rainfall" ],
+  },{
     title: "Rainfall Dev Blog #12: June - July 2021",
     thumbnail: rainfallDevBlog12Image,
     route:  "/rainfall-dev-blog-12",
